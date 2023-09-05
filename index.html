@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Convertor</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="crimson">
+        <header>
+            <a id="home" href=".">Temperature Convertor</a>
+        </header>
+        <div class="Container top-half">
+            <input class="child" type="number" id="i/pTemp" value="1" placeholder="Enter the Temperature">
+            <select  id="tempFrom" class="drop dropdown-top child">
+                <option id="celsius-t" value="0" class="dropdown-content-top">°C</option>
+                <option id="fehrenheit-t" value="1" class="dropdown-content-top">°F</option>
+                <option id="kelvin-t" value="2" class="dropdown-content-top">K</option>
+            </select>
+        </div>
+    </div>
+    <div class="button-container" id="submit">
+        <!-- <i class="fal fa-circle fa-stack-2x"></i> -->
+        <i class="fa-solid fa-equals fa-xl" style="color: #cd134b;"></i>   
+    </div>
+    <!-- <span class="fa-stack fa-2x">
+       
+    </span>
+-->
+<div class="Container bottom-half">
+    <h class="child" id="o/pTemp" >33.8</h>
+    <select id="tempTo" class="drop dropdown-bottom child">
+        <option id="fehrenheit-b" value="1" class="dropdown-content-bottom">°F</option>
+        <option id="kelvin-b" value="2" class="dropdown-content-bottom">K</option>
+        <option id="celsius-b" value=0 class="dropdown-content-bottom">°C</option>
+    </select>
+</div>
+
+<script src="tempDisp.js"></script>
+<script src="conv.js"></script>
+<script src="https://kit.fontawesome.com/2016f384be.js" crossorigin="anonymous"></script>
+</body>
+<footer>
+    <div class="foot">
+        <p>Experimental | <span><a id="about" href="https://www.linkedin.com/in/shashank-shekhar-ep105/" target="_blank" rel="noopener noreferrer">Contact-Info</a></span></p>
+        
+    </div>
+</footer>
+</html>
